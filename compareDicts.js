@@ -75,5 +75,6 @@ dictKeysSorted.forEach((challengeDict) => {
   });
 });
 
-if (hasFailed) throw new Error("Missing keys found");
+// if (hasFailed) throw new Error("Missing keys found");
+if (hasFailed) process.exit(1);
 else process.exit(0);
